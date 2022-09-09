@@ -1,0 +1,421 @@
+header{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background: white;
+    width: 100%;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    padding: 0 10%;
+}
+nav .center{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1{
+    font-size: 25px;
+    transition: color;
+    letter-spacing: 1px;
+    color: black;
+    transition: color 0.8s ease;
+}
+
+nav h1:hover{
+    color: blue;
+}
+
+.hamburguernav{
+    width: 50px;
+    height: 50%;
+    display: block;
+    position: relative;
+}
+
+.hamburguernav:hover .bg{
+    background: rgba(172, 172, 172, 0.6);
+}
+
+.hamburguernav > div{
+    height: 6px;
+    border-radius: 5px;
+    width: 30px;
+    margin: 2px 12.5px;
+    background: black;
+}
+.hamburguernav .bg{
+    transition: background .8s ease;
+    background: white;
+    position: absolute;
+    top: -80%;
+    left: -20%;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 300%;
+}
+.hamburguernav input{
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+}
+
+.sec1{
+    height: 80vh;
+    margin-top: 10vh;
+    width: 100%;
+    background: url("assets/pexels-mallem-amir-13466779.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sec1 .center{
+    position: relative;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.sec1 .textsc1{
+    display: flex;
+    flex-direction: column;
+    z-index: 98;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.textsc1 h3{font-size: 26px;}
+.textsc1 p{
+    font-size: 20px;
+}
+
+.textsc1 h3, .textsc1 p{
+    color: white;
+    font-weight: lighter;
+    margin: 8px 0;
+    text-shadow: 0 0 8px black;
+}
+
+.textsc1>div{
+    margin: 5px 0%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: fit-content;
+}
+
+.textsc1 a{
+    margin: 12px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 2px solid white;
+    color:white;
+    background: black;
+    font-size: calc(16px + 0.1vw);
+    height: 80%;
+}
+
+.textsc1 a:hover{
+    background: white;
+    color: black;
+}
+
+.bgtopsec1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 97;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(255, 0, 0,0.6), rgba(233, 48, 48, 0.295));
+}
+
+.subcenter{
+    margin: 0 10%;
+    width: 80%;
+    height: 80%;
+}
+
+.sec2 {
+    width: 100%;
+    height: 100vh;
+    background: rgba(189, 189, 189, 0.521);
+}
+
+.sec2 .subcenter{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr;
+}
+.sec2 .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 .subcenter h4{
+    display: none;
+}
+.textsc2{
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.textsc2 a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 2px;
+    padding: 10px 6px;
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+.textsc2 a:hover{
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.textsc2 p{
+    text-indent: 5%;
+    font-size: calc(14px + 0.4vw);
+    padding: 2px 4px;
+    margin-bottom: 8px;
+}
+
+.sec3 {
+    height: 100vh;
+    width: 100%;
+    padding: 1vh 0%;
+}
+
+.sec3 .center{
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.sec3 h1{
+    font-size: 40px;
+    padding: 8px 1%;
+}
+
+.gridimages{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 0.6fr 1.4fr 0.4fr 1fr 0.6fr;
+    grid-template-rows: 0.8fr 1fr 1.2fr 1fr;
+}
+
+.itensc3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.itensc3 .bgtopsc3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    background: rgba(255, 0, 0,0);
+    transition: background .8s ease;
+    cursor: pointer;
+}
+
+.itensc3 h6{font-size: 18px; color: white;
+margin-bottom: 5px;
+position: relative;
+z-index: 99;
+margin-left: 4%;
+margin-top: auto;}
+
+.itensc3 p{
+    margin-left: 4%;
+    position: relative;
+    z-index: 99;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.bgtopsc3:hover{
+    background: rgba(255, 0, 0,0.6);
+}
+
+.gridimages .itensc3:nth-child(1){
+    grid-column: 1/3;
+    background: url("assets/53058636b73066f755000188_bob-van-aubel-ray-bans.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gridimages .itensc3:nth-child(2){
+    grid-column: 3/5;
+    background: url("assets/5305886d6d2366f55500028f_beach-1600px.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gridimages .itensc3:nth-child(3){
+    grid-column: 5/6;
+    background: url("assets/530645333373265c0900015c_sand.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gridimages .itensc3:nth-child(4){
+    grid-column:1/3;
+    background: url("assets/530646bbadcb8f8555000001_johnny-lam-connect.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gridimages .itensc3:nth-child(5){
+    grid-column: 3/6;
+    background: url("assets/530646d6adcb8f8555000003_sunrise2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gridimages .itensc3:nth-child(6){
+    grid-column: 1/4;
+    background: url("assets/5306472031e0e3a00e000007_sunrise.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gridimages .itensc3:nth-child(7){
+    grid-column: 4/6;
+    background: url("assets/53065b41ef0d48315c000055_birds.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gridimages .itensc3:nth-child(8){
+    grid-column: 1/3;
+    background: url("assets/53065bbdef0d48315c00005a_oceans.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.gridimages .itensc3:nth-child(9){
+    grid-column: 3/6;
+    background: url("assets/530662a4aec5d8cb14000078_lake.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.sec4{
+    height: 100vh;
+    width: 100%;
+    background: rgba(189, 189, 189, 0.521);
+}
+.sec4 .center{
+    display: flex;
+    justify-content: center;
+    align-items: 
+    center;
+}
+.sec4 .subcenter{
+    display: flex;
+    flex-wrap: wrap;
+}
+.formtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 30%;
+}
+.formtext p{
+    font-size: 12px;
+}
+.textsc4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 100%;
+}
+.textsc4 form{
+    width: 100%;
+    height: 100%;
+}
+.textsc4 form input{
+    display: block;
+    height: 25%;
+    margin: 2px 0;
+    width: 100%;
+    padding: 4px 4%;
+    font-size: 15px;
+}
+.formtext h1{
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+.formtext p{
+    margin: 6px 0;
+}
+.textsc4 form input[type='submit']{
+    display: block;
+    height: 20%;
+    cursor: pointer;
+    text-align: center;
+    margin: 5% 0;
+    width: 100%;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 0%;
+    font-size: 20px;
+    transition: all .8s ease;
+}
+.textsc4 form input[type='submit']:hover{
+    background: black;
+    border: 1px solid white;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    background: white;
+    height: 8vh;
+    padding: 1vh 0;
+}
+
+.footer{
+    display: flex;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer a{
+    font-size: 18px;
+    color: black;
+}
